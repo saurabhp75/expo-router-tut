@@ -1,10 +1,16 @@
-import { Slot } from "expo-router";
+import { Stack } from "expo-router";
 import { StyleSheet, Text, View } from "react-native";
 
 export default function ProductsLayout() {
   return (
     <View style={styles.container}>
-      <Slot />
+      <View style={styles.content}>
+        <Stack screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="index" />
+          <Stack.Screen name="[id]" />
+          <Stack.Screen name="[...rest]" />
+        </Stack>
+      </View>
       <View style={styles.discountedProducts}>
         <Text>Discounted Products</Text>
       </View>
@@ -15,8 +21,9 @@ export default function ProductsLayout() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+  },
+  content: {
+    flex: 1,
   },
   discountedProducts: {
     padding: 20,
