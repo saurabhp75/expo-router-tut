@@ -8,6 +8,14 @@ export default function ProductList() {
       <Link href="/products/1">Go to Product 1</Link>
       <Link href="/products/2">Go to Product 2</Link>
       <Link href="/products/3">Go to Product 3</Link>
+
+      <Link href="/products/best-sellers/playstation-5">
+        PlayStation 5 (Best Seller)
+      </Link>
+      <Link href="/products/deals/black-friday/playstation-5">
+        PlayStation 5 (Dealst)
+      </Link>
+      <Link href="/products/search/playstation-5">PlayStation 5 (Search)</Link>
     </View>
   );
 }
