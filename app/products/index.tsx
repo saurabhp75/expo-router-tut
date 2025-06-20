@@ -13,7 +13,7 @@ export default function ProductList() {
         PlayStation 5 (Best Seller)
       </Link>
       <Link href="/products/deals/black-friday/playstation-5">
-        PlayStation 5 (Dealst)
+        PlayStation 5 (Deals)
       </Link>
       <Link href="/products/search/playstation-5">PlayStation 5 (Search)</Link>
     </View>
